@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "poppins";
+  font-size: 8px;
+}
+.flex {
+  display: flex;
+  align-items: center;
+}
+nav {
+  justify-content: space-between;
+  background-color: rgb(191, 219, 209);
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 99;
+}
+.main {
+  padding-block: 8px;
+  padding-inline: 20px;
+  justify-content: space-between;
+}
+.container {
+  max-width: 1180px;
+  margin-inline: auto;
+  overflow: hidden;
+}
+nav a {
+  text-decoration: none;
+}
+.logo {
+  font-weight: bolder;
+  font-size: 20px;
+}
+nav ul {
+  list-style-type: none;
+  justify-content: space-between;
+  gap: 20px;
+}
+nav input {
+  padding-inline: 5px;
+  font-size: 8px;
+  border-radius: 4px;
+  border: 1px solid black;
+  height: 15px;
+}
+nav button {
+  background-color: dodgerblue;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 8px;
+  border: 1px solid black;
+  width: 30px;
+}
+.hoverlink {
+  cursor: pointer;
+}
+.hoverlink:hover {
+  color: cadetblue;
+}
+.hoverlink:active {
+  color: blue;
+}
+.searchbutton:hover {
+  background-color: rgb(162, 193, 182);
+}
+.content {
+  margin-top: 50px;
+  margin-inline: 20px;
+}
+.card {
+  width: 180px;
+  background-color: rgb(222, 232, 241);
+  border: 0.2px solid black;
+  border-radius: 3px;
+  overflow: hidden;
+  box-shadow: 0px 0px 5px rgb(40, 41, 44);
+  transition: all 0.3s ease;
+}
+.card:hover {
+  cursor: pointer;
+  transform: translateY(2px);
+}
+.card-container {
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: start;
+  row-gap: 5px;
+}
+.card-header img {
+  width: 180px;
+  height: 100px;
+  background-size: cover;
+}
+.card-content {
+  padding: 5px;
+  height: 100px;
+}
+nav i {
+  visibility: hidden;
+}
+@media (max-width: 400px) {
+  nav i {
+    /* visibility: visible */
+  }
+  nav li {
+    visibility: hidden;
+  }
+  nav ul{
+    gap: 0px;
+  }
+  .card {
+    width: 160px;
+    margin-bottom: 5px;
+  }
+  .card-header img {
+    width: 170px;
+    height: 70px;
+  }
+  .content {
+    margin-top: 60px;
+  }
+  .search{
+    display: flex;
+  }
+  nav input{
+    width: 80px;
+  }
+  nav button{
+    width: 30px;
+    font-size: 8px;
+  }
+}
